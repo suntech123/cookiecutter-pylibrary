@@ -118,14 +118,15 @@ if __name__ == "__main__":
 
 {%- if cookiecutter.version_manager == 'bump2version' %}
     os.unlink('tbump.toml')
-{%- elif cookiecutter.version_manager == 'tbump' %}
-    os.unlink('.bumpversion.cfg')
+{%- elif cookiecutter.version_manager == 'tbump' %}   
+    os.unlink('.bumpversion.cfg')  ## Changed the default to - 'tbump' to remove this file from project structure
 {% endif %}
 
 {%- if cookiecutter.license == "no" %}
     os.unlink('LICENSE')
 {% endif %}
-    os.unlink('.cookiecutterrc')
+    os.unlink('.cookiecutterrc')   ## Added by me to remove this file from project structure
+    os.unlink('.coveragerc')   ## Added by me to remove this file from project structure
 
     print("""
 ################################################################################
