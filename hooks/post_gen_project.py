@@ -227,7 +227,7 @@ NOTE:
 """.format(
                 '"{{ cookiecutter.command_line_interface_bin_name }}" will shadow your package.'.ljust(65),
                 '(not "{0}").'.format(command_line_interface_bin_name).ljust(32)))
+            sys.exit(1)
+        break    
     shutil.rmtree('ci')    ## Added to remove this dir
     shutil.rmtree('.tox')  ## Added to remove this dir
-            sys.exit(1)
-        break
