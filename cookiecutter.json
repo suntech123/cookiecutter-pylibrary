@@ -59,7 +59,7 @@
     "sphinx_docs_hosting": "https://{{ cookiecutter.repo_name|replace('.', '') }}.readthedocs.io/",
     "travis": ["yes", "no"],
     "travis_osx": ["no", "yes"],
-    "appveyor": ["yes", "no"],
+    "appveyor": ["no", "yes"],
     "requiresio": ["yes", "no"],
 
     "_extensions": ["jinja2_time.TimeExtension"]
