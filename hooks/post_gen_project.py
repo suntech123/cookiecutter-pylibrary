@@ -128,6 +128,7 @@ if __name__ == "__main__":
     os.unlink('.cookiecutterrc')   ## Added by me to remove this file from project structure
     os.unlink('.coveragerc')   ## Added by me to remove this file from project structure
     os.unlink('.editorconfig')  ## Added by me to remove this file from project structure
+    os.unlink('.readthedocs.yml') ## Added by me to remove this file from project structure
 
     print("""
 ################################################################################
