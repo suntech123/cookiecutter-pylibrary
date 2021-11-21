@@ -125,6 +125,7 @@ if __name__ == "__main__":
 {%- if cookiecutter.license == "no" %}
     os.unlink('LICENSE')
 {% endif %}
+    os.unlink('.cookiecutterrc')
 
     print("""
 ################################################################################
