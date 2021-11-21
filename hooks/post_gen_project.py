@@ -130,8 +130,6 @@ if __name__ == "__main__":
     os.unlink('.editorconfig')  ## Added by me to remove this file from project structure
     os.unlink('.readthedocs.yml') ## Added by me to remove this file from project structure
     os.unlink('tbump.toml') ## Added to remove this file
-    shutil.rmtree('ci')   ## Added to remove this dir
-    ##shutil.rmtree('.tox')  ## Added to remove this dir -- this command error out
 
     print("""
 ################################################################################
@@ -229,5 +227,7 @@ NOTE:
 """.format(
                 '"{{ cookiecutter.command_line_interface_bin_name }}" will shadow your package.'.ljust(65),
                 '(not "{0}").'.format(command_line_interface_bin_name).ljust(32)))
+    shutil.rmtree('ci')    ## Added to remove this dir
+    shutil.rmtree('.tox')  ## Added to remove this dir
             sys.exit(1)
         break
