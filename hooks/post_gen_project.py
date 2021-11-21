@@ -131,7 +131,7 @@ if __name__ == "__main__":
     os.unlink('.readthedocs.yml') ## Added by me to remove this file from project structure
     os.unlink('tbump.toml') ## Added to remove this file
     shutil.rmtree('ci')   ## Added to remove this dir
-    shutil.rmtree('.tox')  ## Added to remove this dir
+    ##shutil.rmtree('.tox')  ## Added to remove this dir -- this command error out
 
     print("""
 ################################################################################
