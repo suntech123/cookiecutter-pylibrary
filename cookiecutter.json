@@ -1,8 +1,8 @@
 {
-    "full_name": "Ionel Cristian Maries",
-    "email": "contact@ionelmc.ro",
+    "full_name": "Sunil Kumar Behl",
+    "email": "skumarbehl@gmail.com",
     "website": "https://blog.ionelmc.ro",
-    "project_name": "Nameless",
+    "project_name": "SampleProject",
     "repo_name": "python-{{ cookiecutter.project_name|lower|replace(' ','-') }}",
     "repo_hosting": ["github.com", "gitlab.com", "other domain not listed"],
     "repo_hosting_domain": "{{ cookiecutter.repo_hosting if cookiecutter.repo_hosting != 'other domain not listed' else '' }}",
