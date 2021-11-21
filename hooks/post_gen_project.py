@@ -102,8 +102,10 @@ if __name__ == "__main__":
     unlink_if_exists('.travis.yml')
 {% endif %}
 
-{%- if cookiecutter.repo_hosting == 'no' %}
+{%- if cookiecutter.repo_hosting == 'github.com' %}
     os.unlink('CONTRIBUTING.rst')
+    os.unlink('CHANGELOG.rst')
+    os.unlink('AUTHORS.rst')
 {% endif %}
 
 {%- if cookiecutter.setup_py_uses_setuptools_scm == 'yes' %}
