@@ -97,13 +97,13 @@ if __name__ == "__main__":
     unlink_if_exists('appveyor.yml')
     unlink_if_exists(join('ci', 'appveyor-bootstrap.py'))
 
-{%- if cookiecutter.travis == 'no' %}
+{%- if cookiecutter.travis == 'no' %}        ## Changed the default value in json configuration to satisfy this condition and hence remove .travis.yml file
     os.unlink(join('ci', 'templates', '.travis.yml'))
     unlink_if_exists('.travis.yml')
 {% endif %}
 
-{%- if cookiecutter.repo_hosting == 'github.com' %}
-    os.unlink('CONTRIBUTING.rst')
+{%- if cookiecutter.repo_hosting == 'github.com' %}   ## Changed the default value in json configuration to satisfy this condition and hence remove all these file
+    os.unlink('CONTRIBUTING.rst') 
     os.unlink('CHANGELOG.rst')
     os.unlink('AUTHORS.rst')
 {% endif %}
